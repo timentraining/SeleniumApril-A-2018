@@ -5,6 +5,13 @@
 	<groupId>net.timeandtraining</groupId>
 	<artifactId>SeleniumApril12018</artifactId>
 	<version>1.0</version>
+	<repositories>
+		<repository>
+			<id>jcenter</id>
+			<name>bintray</name>
+			<url>http://jcenter.bintray.com</url>
+		</repository>
+	</repositories>
 
 
 	<dependencies>
@@ -28,7 +35,6 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>5.11</version>
-			<scope>test</scope>
 			<classifier>jdk15</classifier>
 		</dependency>
 
