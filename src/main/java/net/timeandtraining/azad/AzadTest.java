@@ -1,5 +1,7 @@
 package net.timeandtraining.azad;
 
-public class AzadTest {
+import net.timeandtraining.settings.TestBase;
+
+public class AzadTest extends TestBase{
 
 }
