@@ -12,10 +12,24 @@ public class TestBase {
 	
 	@BeforeSuite
 	public static void init() {
+		
+		
 		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\lib\\chromedriver.exe");
 		driver = new ChromeDriver();
+		
+//		System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"\\lib\\IEDriverServer.exe");
+//		driver = new InternetExplorerDriver();
+		
+//		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\lib\\IEDriverServer.exe");
+//		driver = new FirefoxDriver();		
+				
+		
+		
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(1, TimeUnit.MINUTES);
+		
+	
+		
 		
 	}
 	
