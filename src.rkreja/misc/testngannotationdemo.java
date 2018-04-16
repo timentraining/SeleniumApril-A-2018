@@ -1,7 +1,10 @@
 package misc;
 
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import net.timeandtraining.framework.TestBase;
@@ -30,17 +33,25 @@ public class testngannotationdemo extends TestBase {
 	}
 	
 	@Test
-	@BeforeClass	
 	public void test4() {
 		UI.openURL("http:/www.google.com");
 	}
 	
 	
 	@Test
-	@AfterClass
 	public void test5() {
 		UI.openURL("http:/www.google.com");
 	}
+	
+	@BeforeMethod
+	public void testDataPrep() {
+//		Go to http://www.automationpractice.com
+		UI.openURL("http://www.automationpractice.com");
+//		Click 'DRESSES' button
+		UI.clickByXpath("(//a[contains(text(), 'Dresses')])[5]");	
+	}
+	
+	
 	
 	
 

@@ -5,7 +5,6 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
 public class TestBase {
@@ -32,21 +31,14 @@ public class TestBase {
 	}
 
 	
-	@BeforeMethod
-	public void testDataPrep() {
-//		Go to http://www.automationpractice.com
-		UI.openURL("http://www.automationpractice.com");
-//		Click 'DRESSES' button
-		UI.clickByXpath("(//a[contains(text(), 'Dresses')])[5]");	
-	}
+
 	
-	
+
 	@AfterSuite
 	public static void closeBrowser() {
 		driver.close();
 		driver.quit();
 	}
-	
 	
 
 
