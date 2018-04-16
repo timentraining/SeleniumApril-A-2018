@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-import net.timeandtraining.settings.TestBase;
+import net.timeandtraining.framework.TestBase;
 
 
 public class SelectObjectDemo extends TestBase{

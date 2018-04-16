@@ -3,7 +3,7 @@ package net.timeandtraining.webdriverwaits;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
-import net.timeandtraining.settings.TestBase;
+import net.timeandtraining.framework.TestBase;
 
 public class ImplicitWait extends TestBase{
 	

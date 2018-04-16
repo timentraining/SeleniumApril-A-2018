@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-import net.timeandtraining.settings.TestBase;
+import net.timeandtraining.framework.TestBase;
 
 public class ActionsClassDemo extends TestBase{
 	

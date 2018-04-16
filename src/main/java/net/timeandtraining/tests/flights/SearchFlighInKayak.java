@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-import net.timeandtraining.settings.TestBase;
+import net.timeandtraining.framework.TestBase;
 
 public class SearchFlighInKayak extends TestBase{
 	

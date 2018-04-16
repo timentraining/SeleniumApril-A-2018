@@ -7,8 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import net.timeandtraining.settings.TestBase;
-
+import net.timeandtraining.framework.TestBase;
 public class FlightTests extends TestBase{
 
 	
@@ -29,7 +28,7 @@ public class FlightTests extends TestBase{
 	
 	//Step 4: Enter ATL in To text box
 	driver.findElement(By.id("destinationCity")).clear();
-	driver.findElement(By.id("destinationCity")).sendKeys("ALT");
+	driver.findElement(By.id("destinationCity")).sendKeys("ATL");
 	
 	//Step 5: Enter Tomorrow's date
 	driver.findElement(By.id("depDateCalIcon")).click();

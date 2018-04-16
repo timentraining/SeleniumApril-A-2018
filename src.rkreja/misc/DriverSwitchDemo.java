@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Point;
 import org.testng.annotations.Test;
 
-import net.timeandtraining.settings.TestBase;
+import net.timeandtraining.framework.TestBase;
 
 
 
