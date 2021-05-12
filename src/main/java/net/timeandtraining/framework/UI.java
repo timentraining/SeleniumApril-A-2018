@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 import com.aventstack.extentreports.Status;
 
 public class UI extends TestBase {
-
+//
 	public static void openURL(String url) {
 		driver.get(url);
 		reporter.log(Status.INFO, "Navigated to: " + url);
